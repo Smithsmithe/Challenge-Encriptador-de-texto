@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo de estilos CSS -->
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="logo de encriptador"> <!-- Imagen del logo del encriptador -->
+    </header>
+    <main>
+        <section class="principal"> <!-- Sección principal de la aplicación -->
+            <section class="contenedor-principal"> <!-- Contenedor para la entrada de texto y botones -->
+                <textarea id="input-texto" class="input-texto" placeholder="Ingrese el texto aquí"></textarea> <!-- Área de texto para ingresar el texto a encriptar/desencriptar -->
+                <div class="contenedor-alerta">
+                    <div class="imagen-alerta">
+                        <img class="imagen-alerta" src="assets/Vector.png" alt="Vector de alerta"> <!-- Imagen de alerta -->
+                    </div>
+                    <div class="alerta-texto">Por favor ingresar únicamente letras minúsculas y sin acentos</div> <!-- Mensaje de alerta sobre las reglas del texto -->
+                </div>    
+                <div class="contenedor-botones"> <!-- Contenedor para los botones -->
+                    <button id="btn-encriptar" class="btn-encriptar">Encriptar</button> <!-- Botón para encriptar el texto -->
+                    <button id="btn-desencriptar" class="btn-desencriptar">Desencriptar</button> <!-- Botón para desencriptar el texto -->
+                </div>
+            </section>
+            <section id="secundario" class="secundario">  <!-- Sección secundaria que contiene el resultado -->
+                <section id="contenedor-secundario" class="contenedor-secundario"> <!-- Contenedor principal del resultado -->
+                    <div class="imagen-muneco-lupa">
+                        <img src="assets/Muñeco.png" alt="imagen de muñeco lupa"> <!-- Imagen del muñeco lupa (o similar) -->
+                    </div>
+                    <div class="texto-secundario-informativo">
+                        <h2>Ningún mensaje fue encontrado</h2> <!-- Mensaje informativo cuando no hay texto para mostrar -->
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p> <!-- Instrucciones para el usuario -->
+                    </div>
+                </section>  
+                <section id="contenedor-secundario-alternativo" class="contenedor-secundario-alternativo"> <!-- Contenedor alternativo para mostrar el resultado encriptado/desencriptado -->
+                    <textarea id="resultado-texto" class="texto-secundario" placeholder="Por favor ingrese un texto para encriptar o desencriptar"></textarea> <!-- Área de texto para mostrar el resultado -->
+                    <button id="btn-copiar" class="btn-copiar">Copiar</button> <!-- Botón para copiar el resultado al portapapeles -->
+                </section>
+            </section> 
+        </section>       
+    </main>
+    <footer></footer> <!-- Sección del pie de página (vacía en este caso) -->
+    <script src="app.js"></script> <!-- Enlaza el archivo JavaScript que contiene la lógica de la aplicación -->
+</body>
+</html>
